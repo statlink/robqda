@@ -7,6 +7,7 @@ Authors@R: person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagri
 Author: Michail Tsagris [aut, cre]
 Maintainer: Michail Tsagris <mtsagris@uoc.gr>
 Depends: R (>= 4.0)
-Imports: MASS, Rfast, Rfast2
+Imports: MASS, Rfast
+Suggests: mvcauchy, Rfast2 
 License: GPL (>= 2)
 Description: Robust quadratic discriminant analysis including cross-validation. The Minimum Covariance Determinant does most of the job. References: Friedman J., Hastie T. and Tibshirani R. (2009). The elements of statistical learning, 2nd edition. Springer, Berlin. <doi:10.1007/978-0-387-84858-7>. 
