@@ -1,0 +1,7 @@
+#useDynLib(pchc, .registration = TRUE)
+
+importFrom("Rfast", rowMaxs, mahala)
+importFrom("MASS", cov.rob)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
