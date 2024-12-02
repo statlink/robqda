@@ -58,8 +58,12 @@ The time required by the cross-validation procedure.
 }
 
 \references{
+Friedman J.H. (1989): Regularized Discriminant Analysis. Journal of the American Statistical
+Association 84(405): 165--175.
+
 Friedman Jerome, Trevor Hastie and Robert Tibshirani (2009).
 The elements of statistical learning, 2nd edition. Springer, Berlin.
+
 }
 
 \author{
