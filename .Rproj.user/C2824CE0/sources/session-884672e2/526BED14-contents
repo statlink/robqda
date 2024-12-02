@@ -22,6 +22,9 @@ A matrix with the available data. They have to be continuous.
 \item{ina}{
 A group indicator variable for the avaiable data.
 }
+\item{k}{
+The number of principal components to compute and retain.
+}
 \item{quantile.used}{
 A number, the minimum number of the data points regarded as good points.
 }
