@@ -1,4 +1,4 @@
-robqdaHD.cv <- function(x, ina, k = floor(n/2), nfolds = 10, quantile.used = floor((n + p + 1)/2), nsamp = "best",
+robqdaHD.cv <- function(x, ina, k = floor(n/2), nfolds = 10, quantile.used = floor(n/2), nsamp = "best",
                       folds = NULL, stratified = TRUE, seed = NULL) {
 
   ina <- as.numeric(ina)
@@ -16,7 +16,7 @@ robqdaHD.cv <- function(x, ina, k = floor(n/2), nfolds = 10, quantile.used = flo
     xtrain <- x[ -folds[[ vim ]], , drop = FALSE]   ## training sample
     xtest <- x[ folds[[ vim ]], , drop = FALSE]  ## test sample
     n <- dim(xtrain)[1]
-    vec <- Rfast2::pca(xtrain, k = k)$vectors
+    vec <- Rfast2::pca(xtrain, k = k, vectors = TRUE)$vectors
     xtrain <- train %*% vec
     xtest <- xtest %*% vec
 
