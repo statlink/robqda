@@ -23,9 +23,6 @@ A matrix with the data.
 \item{ina}{
 A group indicator variable for the avaiable data.
 }
-\item{k}{
-The number of principal components to compute and retain.
-}
 \item{nfolds}{
 The number of folds in the cross validation.
 }

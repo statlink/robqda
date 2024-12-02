@@ -1,0 +1,10 @@
+robqdaHD <- function(xnew, x, ina, k = floor(n/2), quantile.used = floor((n + p + 1)/2), nsamp = "best") {
+
+  mod <- Rfast2::pca(x, k = k)
+  m <- Rfast::colmeans(x)
+  x <- Rfast::eachrow(x, m, oper = "-") %*% mod$vectors
+  xnew <- Rfast::eachrow(xnew, m, oper = "-") %*% mod$vectors
+  model <- robqda::robqda(xnew = xnew, x = x, ina = ina, quantile.used = quantile.used, nsamp = nsamp)
+  list(pca = mod, model = model)
+
+}
