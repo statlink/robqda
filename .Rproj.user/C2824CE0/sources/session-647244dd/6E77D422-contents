@@ -14,7 +14,7 @@ Robust quadratic discriminant analysis including cross-validation. The Minimum C
 Package: \tab robqda\cr
 Type: \tab Package\cr
 Version: \tab 1.0 \cr
-Date: \tab 2024-12-02\cr
+Date: \tab 2024-12-03\cr
 License: \tab GPL-2\cr
 }
 }
